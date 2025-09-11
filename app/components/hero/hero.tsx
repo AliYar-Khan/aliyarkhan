@@ -5,7 +5,7 @@ import poppins from "@/app/utils/font";
 
 export default function Hero() {
     return (
-        <section className="min-w-full min-h-[700px] bg-black text-white flex flex-col justify-between items-center px-8 py-36">
+        <section className="min-w-full min-h-[600px] bg-black text-white flex flex-col justify-between items-center px-8 py-36">
             <div className="flex flex-row justify-evenly min-w-full">
                 <div className="flex flex-col justify-center">
                     <h1 className={`${poppins.className} text-5xl font-bold`}>Ali Yar Khan</h1>
@@ -24,6 +24,24 @@ export default function Hero() {
                         alt="profile"
                         className="w-[250px] h-[250px] rounded-full object-cover"
                     />
+                </div>
+            </div>
+            <div className="flex flex-row justify-evenly min-w-full pt-28">
+                <div className="flex flex-row space-x-5">
+                    <span className="text-6xl font-extrabold text-white">4+</span>
+                    <span className="text-xl m-0 p-0">Years<br />of experience</span>
+                </div>
+                <div className="flex flex-row space-x-5">
+                    <span className="text-6xl font-extrabold text-white">10+</span>
+                    <span className="text-xl m-0 p-0">Live<br />Apps</span>
+                </div>
+                <div className="flex flex-row space-x-5">
+                    <span className="text-6xl font-extrabold text-white">50+</span>
+                    <span className="text-xl m-0 p-0">Happy<br />Clients</span>
+                </div>
+                <div className="flex flex-row space-x-5">
+                    <span className="text-6xl font-extrabold text-white">250k+</span>
+                    <span className="text-xl m-0 p-0">Lines<br />of Code</span>
                 </div>
             </div>
         </section>
