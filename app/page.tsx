@@ -16,7 +16,8 @@ export default function Home() {
       <RecentWork />
       <Contact />
       <footer className="text-center py-6 text-sm bg-black text-white">
-        Made with ❤️
+        Made with ❤️<br />
+        © 2025 All rights reserved by Ali Yar Khan
       </footer>
     </div>
   );
