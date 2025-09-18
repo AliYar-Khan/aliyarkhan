@@ -1,41 +1,58 @@
-import Image from "next/image";
-
-import poppins from "@/app/utils/font";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import Image from 'next/image';
+import poppins from '@/app/utils/font';
+import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards';
 
 export default function Hero() {
     return (
-        <section className="min-w-full min-h-[570px] bg-black text-white flex flex-col justify-between items-center px-8 py-32">
-            <div className="flex flex-row justify-evenly min-w-full">
-                <div className="flex flex-col justify-center">
-                    <h1 className={`${poppins.className} text-5xl font-bold`}>Ali Yar Khan</h1>
-                    <p className={`mt-4 text-gray-400 text-[14px] ${poppins.className} font-normal max-w-md`}>
-                        Full-Stack Web & Mobile Developer with 3+ years of experience building scalable SaaS platforms, mobile apps, and AI-powered solutions using React, Next.js, Node.js, Flutter, and Firebase.
+        <section className="w-full bg-black text-white flex flex-col items-center px-6 sm:px-10 lg:px-20 py-16 lg:py-32">
+            {/* Top content: text + image */}
+            <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full max-w-6xl gap-12">
+                {/* Text side */}
+                <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-xl">
+                    <h1
+                        className={`${poppins.className} text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight`}
+                    >
+                        Ali Yar Khan
+                    </h1>
+                    <p
+                        className={`mt-4 text-gray-400 text-base sm:text-lg ${poppins.className} font-normal`}
+                    >
+                        Full-Stack Web &amp; Mobile Developer with 3+ years of experience
+                        building scalable SaaS platforms, mobile apps, and AI-powered
+                        solutions using React, Next.js, Node.js, Flutter, and Firebase.
                     </p>
-                    <button className="max-w-[310px] mt-6 bg-[#3F8E00] hover:text-black px-6 py-3 rounded-md font-semibold">
+                    <button className="mt-6 bg-[#3F8E00] hover:bg-[#52a61a] text-white hover:text-black px-8 py-3 rounded-md font-semibold transition-colors duration-200">
                         Let’s get started →
                     </button>
                 </div>
-                <div className="flex flex-col">
+
+                {/* Image side */}
+                <div className="flex-shrink-0">
                     <Image
-                        width={250}
-                        height={250}
+                        width={300}
+                        height={300}
                         src="/profile.jpeg"
-                        alt="profile"
-                        className="w-[250px] h-[250px] rounded-full object-cover"
+                        alt="Ali Yar Khan profile"
+                        className="w-48 h-48 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full object-cover shadow-lg"
+                        priority
                     />
                 </div>
             </div>
-            <div className="h-[20rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
-                <InfiniteMovingCards
-                    items={[
-                        { image: '/angular.png' },
-                        { image: '/django.png' },
-                        { image: '/flutter.png' },
-                        { image: '/nestjs.png' },
-                        { image: '/node.png' },
-                        { image: '/react.png' },
-                    ]} />
+
+            {/* Infinite tech logos carousel */}
+            <div className="mt-16 w-full max-w-6xl">
+                <div className="h-64 rounded-md flex items-center justify-center relative overflow-hidden">
+                    <InfiniteMovingCards
+                        items={[
+                            { image: '/angular.png' },
+                            { image: '/django.png' },
+                            { image: '/flutter.png' },
+                            { image: '/nestjs.png' },
+                            { image: '/node.png' },
+                            { image: '/react.png' },
+                        ]}
+                    />
+                </div>
             </div>
         </section>
     );
