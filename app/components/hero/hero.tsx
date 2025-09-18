@@ -1,8 +1,17 @@
+"use client";
+
+import dynamic from "next/dynamic";
+import { useState } from "react";
 import Image from 'next/image';
 import poppins from '@/app/utils/font';
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards';
+const CalendlyWrapper = dynamic(() => import("../reactCalendly/reactCalendly"), {
+    ssr: false,
+});
 
 export default function Hero() {
+    const [open, setOpen] = useState(false);
+
     return (
         <section className="w-full bg-black text-white flex flex-col items-center px-6 sm:px-10 lg:px-20 py-16 lg:py-32">
             {/* Top content: text + image */}
@@ -21,9 +30,20 @@ export default function Hero() {
                         building scalable SaaS platforms, mobile apps, and AI-powered
                         solutions using React, Next.js, Node.js, Flutter, and Firebase.
                     </p>
-                    {/* <button className="mt-6 bg-[#3F8E00] hover:bg-[#52a61a] text-white hover:text-black px-8 py-3 rounded-md font-semibold transition-colors duration-200">
+                    <button
+                        onClick={() => setOpen(true)}
+                        className="mt-6 bg-[#3F8E00] hover:bg-[#52a61a] text-white hover:text-black px-8 py-3 rounded-md font-semibold transition-colors duration-200"
+                    >
                         Book a Call →
-                    </button> */}
+                    </button>
+
+
+                    <CalendlyWrapper
+                        open={open}
+                        onClose={() => setOpen(false)}
+                    />
+
+
                 </div>
 
                 {/* Image side */}
