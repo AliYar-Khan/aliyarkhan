@@ -29,13 +29,12 @@ export default function Hero() {
             <div className="h-[20rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
                 <InfiniteMovingCards
                     items={[
-                        { title: 'Angular', image: '/angular.png' },
-                        { title: 'django', image: '/django.png' },
-                        { title: 'Flutter', image: '/flutter.png' },
-                        { title: 'Nestjs', image: '/nestjs.png' },
-                        { title: 'Nodejs', image: '/node.png' },
-                        { title: 'React', image: '/react.png' },
-                        { title: 'React Native', image: '/react.png' }
+                        { image: '/angular.png' },
+                        { image: '/django.png' },
+                        { image: '/flutter.png' },
+                        { image: '/nestjs.png' },
+                        { image: '/node.png' },
+                        { image: '/react.png' },
                     ]} />
             </div>
         </section>
