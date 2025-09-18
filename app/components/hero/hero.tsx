@@ -21,9 +21,9 @@ export default function Hero() {
                         building scalable SaaS platforms, mobile apps, and AI-powered
                         solutions using React, Next.js, Node.js, Flutter, and Firebase.
                     </p>
-                    <button className="mt-6 bg-[#3F8E00] hover:bg-[#52a61a] text-white hover:text-black px-8 py-3 rounded-md font-semibold transition-colors duration-200">
-                        Let’s get started →
-                    </button>
+                    {/* <button className="mt-6 bg-[#3F8E00] hover:bg-[#52a61a] text-white hover:text-black px-8 py-3 rounded-md font-semibold transition-colors duration-200">
+                        Book a Call →
+                    </button> */}
                 </div>
 
                 {/* Image side */}
