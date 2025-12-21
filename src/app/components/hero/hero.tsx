@@ -7,7 +7,7 @@ export default function Hero() {
     const [open, setOpen] = useState(false);
 
     return (
-        <section className="w-full bg-black bg-grid-white/[0.05] relative text-white flex flex-col items-center px-6 sm:px-10 lg:px-20 py-16 lg:py-32 overflow-hidden">
+        <section className="w-full bg-black bg-grid-white/[0.05] relative text-white flex flex-col items-center px-6 sm:px-10 lg:px-20 py-16 lg:py-48 overflow-hidden">
             {/* Radial gradient for the container to give a faded look */}
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
@@ -16,14 +16,14 @@ export default function Hero() {
                 {/* Text side */}
                 <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-xl">
                     <h1
-                        className={`${poppins.className} text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400`}
+                        className={`${poppins.className} text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400`}
                     >
-                        Full-Stack Software Engineer building scalable SaaS & AI-powered products
+                        Full-Stack Engineer: SaaS & AI Solutions
                     </h1>
                     <p
-                        className={`mt-4 text-gray-400 text-base sm:text-lg ${poppins.className} font-normal`}
+                        className={`mt-4 text-gray-400 text-sm sm:text-base ${poppins.className} font-normal max-w-lg`}
                     >
-                        3+ years of experience building scalable SaaS platforms, mobile apps, and AI-powered solutions using MERN, Flutter, and Firebase.
+                        Building scalable SaaS platforms & mobile apps with MERN, Flutter, and Firebase.
                     </p>
 
                     <div className="flex flex-wrap gap-4 mt-6 justify-center lg:justify-start">

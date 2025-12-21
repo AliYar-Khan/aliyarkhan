@@ -73,8 +73,8 @@ export default function DeepDives() {
                         <div className="mt-8 pt-8 border-t border-gray-100">
                             <h4 className="font-bold text-lg mb-3">Architecture & Trade-offs</h4>
                             <ul className="list-disc list-inside text-gray-600 text-sm space-y-2">
-                                <li><strong>Decision:</strong> Serverless architecture for API handling.</li>
-                                <li><strong>Trade-off:</strong> Cold starts were initially an issue. Solved by implementing keep-warm strategies during peak hours.</li>
+                                <li><strong>Decision:</strong> Built using the MERN Stack (MongoDB, Express, React, Node.js).</li>
+                                <li><strong>Trade-off:</strong> Managing the server infrastructure allowed for persistent connections (WebSockets) for real-time generation updates, though it required more initial setup than serverless solutions.</li>
                                 <li><strong>Complex State:</strong> Managed heavy canvas-like state in React, optimizing re-renders to ensure a smooth 60fps experience while manipulating images.</li>
                             </ul>
                         </div>
