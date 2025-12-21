@@ -9,6 +9,7 @@
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
+    "@netlify/vite-plugin-tanstack-start": "^1.2.5",
     "@tabler/icons-react": "^3.35.0",
     "@tailwindcss/cli": "^4.1.13",
     "@tanstack/react-router": "^1.141.2",

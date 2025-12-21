@@ -1,6 +1,6 @@
 import { createRootRoute, Outlet, HeadContent, Scripts, createFileRoute, lazyRouteComponent, createRouter as createRouter$1 } from "@tanstack/react-router";
 import { jsx, jsxs } from "react/jsx-runtime";
-const appCss = "/assets/globals-D59sKHUi.css";
+const appCss = "/assets/globals-Co21MfM6.css";
 const Route$1 = createRootRoute({
   head: () => ({
     meta: [
@@ -20,7 +20,8 @@ const Route$1 = createRootRoute({
       }
     ],
     links: [
-      { rel: "stylesheet", href: appCss }
+      { rel: "stylesheet", href: appCss },
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
     ]
   }),
   component: RootComponent
@@ -37,7 +38,7 @@ function RootDocument({ children }) {
     ] })
   ] });
 }
-const $$splitComponentImporter = () => import("./index-DWpOTzy-.js");
+const $$splitComponentImporter = () => import("./index-DzoqP5MT.js");
 const Route = createFileRoute("/")({
   component: lazyRouteComponent($$splitComponentImporter, "component")
 });

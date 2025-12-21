@@ -20,7 +20,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="bg-black text-white px-8 py-16 min-h-[804px]">
+    <section id="testimonials" className="bg-black text-white px-8 py-16 min-h-[500px]">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold text-center">Testimonials</h2>
         <div className="grid md:grid-cols-2 gap-8 mt-10">
