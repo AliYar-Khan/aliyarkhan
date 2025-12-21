@@ -68,22 +68,6 @@ export default function Hero() {
                     />
                 </div>
             </div>
-
-            {/* Infinite tech logos carousel */}
-            <div className="mt-16 w-full max-w-6xl">
-                <div className="h-64 rounded-md flex items-center justify-center relative overflow-hidden">
-                    <InfiniteMovingCards
-                        items={[
-                            { image: '/angular.png' },
-                            { image: '/django.png' },
-                            { image: '/flutter.png' },
-                            { image: '/nestjs.png' },
-                            { image: '/node.png' },
-                            { image: '/react.png' },
-                        ]}
-                    />
-                </div>
-            </div>
         </section>
     );
 }

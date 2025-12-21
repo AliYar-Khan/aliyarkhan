@@ -18,7 +18,7 @@ export default function FeaturedProjects() {
             tech: "TanStack, Supabase, Tailwind, SSR",
             keyChallenges: "Complex state management for multi-vendor carts, SEO optimization with SSR.",
             impact: "Improved SEO, scalable architecture handling multiple sellers and buyers.",
-            img: "/placeholder.png"
+            img: "/anhar.png"
         },
         {
             name: "Artziii",
