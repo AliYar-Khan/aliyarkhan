@@ -84,9 +84,14 @@ export default function Contact() {
     <section id="contact" className="bg-black text-white px-8 py-16 min-h-[604px]">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold text-center">Get In Touch</h2>
-        <p className={`mt-4 text-gray-400 text-[14px] ${poppins.className} font-normal max-w-md`}>
-
+        <p className={`mx-auto mt-4 text-gray-400 text-[14px] ${poppins.className} font-normal max-w-md text-center`}>
+          Interested in working together? Fill out the form below or connect with me on social media.
         </p>
+        <div className="flex justify-center gap-6 mt-6">
+          <a href="https://github.com/AliYar-Khan" target="_blank" className="text-white hover:text-gray-400 font-bold underline">GitHub</a>
+          <a href="https://www.linkedin.com/in/aliyark145" target="_blank" className="text-white hover:text-gray-400 font-bold underline">LinkedIn</a>
+          <a href="/resume.pdf" target="_blank" className="text-white hover:text-gray-400 font-bold underline">Download Resume</a>
+        </div>
         <form onSubmit={handleSubmit}
           method="POST"
           encType="multipart/form-data" className="max-w-lg mx-auto mt-8 space-y-4">

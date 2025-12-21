@@ -10,10 +10,11 @@ export default function Navbar() {
 
     const links = [
         { href: '/', label: 'Home' },
-        { href: '#case-studies', label: 'Case Studies' },
-        { href: '#testimonials', label: 'Testimonials' },
-        { href: '#recent-work', label: 'Recent Work' },
-        { href: '#contact', label: 'Get In Touch' },
+        { href: '#about', label: 'About' },
+        { href: '#skills', label: 'Skills' },
+        { href: '#projects', label: 'Projects' },
+        { href: '#services', label: 'Services' },
+        { href: '#contact', label: 'Contact' },
     ];
 
     const socials = [
