@@ -24,7 +24,7 @@ function Home() {
             <DeepDives />
             <Services />
             <Testimonials />
-            <Contact />
+            {/* <Contact /> */}
             <footer className="text-center py-6 text-sm bg-black text-white">
                 Made with ❤️<br />
                 © 2025 All rights reserved by Ali Yar Khan
