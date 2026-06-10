@@ -4,15 +4,6 @@ import { Globe, Smartphone, Monitor } from "lucide-react";
 export default function FeaturedProjects() {
     const projects = [
         {
-            name: "AI Tools Directory",
-            problem: "Need a centralized platform to categorize and discover rapidly emerging AI tools.",
-            whatIBuilt: "Built a scalable directory platform with dynamic filtering and admin control.",
-            tech: "Next.js, Firebase, Tailwind",
-            keyChallenges: "Scalable category architecture, optimizing search performance.",
-            impact: "Improved discovery UX, scalable category-tool architecture, admin-friendly content management.",
-            img: "/halal AI.jpg"
-        },
-        {
             name: "Anhar - Marketplace",
             problem: "Sellers needed a dedicated platform to list products like Etsy with a focus on ease of use.",
             whatIBuilt: "Multi-vendor marketplace with shop creation, product listing, and checkout flows.",
@@ -22,7 +13,7 @@ export default function FeaturedProjects() {
             img: "/anhar.png",
             ios: 'Coming Soon',
             android: 'Coming Soon',
-            web: 'Coming Soon'
+            web: 'https://anharshop.com'
         },
         {
             name: "Artziii",
